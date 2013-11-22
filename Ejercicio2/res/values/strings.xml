@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">EjemploFragments</string>
+    <string name="add">añadir</string>
+    <string name="dato">Dato:</string>
+    <string name="subdato">Subdato</string>
+
+</resources>
