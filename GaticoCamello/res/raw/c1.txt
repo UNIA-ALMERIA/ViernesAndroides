@@ -1,0 +1,40 @@
+﻿     1	En una traducción dirigida por la sintaxis, las definiciones dirigidas por la sintaxis indican el orden en que deben evaluarse las reglas semánticas. F
+     2	En las definiciones dirigidas por la sintaxis, si se considera un nodo de un símbolo gramatical de un árbol de análisis sintáctico como un registro con campos para guardar información, entonces un atributo corresponde al nombre de un campo. V
+     3	Siempre es posible reescribir una definición dirigida por la sintaxis para que utilice solo atributos sintetizados. V
+     4	Un ordenamiento topológico de un grafo dirigido acíclico es todo ordenamiento m1, m2,...mk de los nodos del grafo tal que las aristas vayan desde los nodos que aparecen primero en el ordenamiento a los que aparecen más tarde. V
+     5	Para los métodos que evalúan las reglas semánticas basados en reglas, en el momento de la compilación se obtiene un orden de evaluación a partir de un ordenamiento topológico del grado de dependencias construido según el arbol de análisis sintáctico. F
+     6	En la construcción de árboles sintácticos para expresiones se construyen subárboles para subexpresiones creando un nodo para cada operador y cada operando. V
+     7	En la evaluación ascendente de definiciones con atributos sintetizados, siempre que se realice una reducción, se calculan los valores de los nuevos atributos sintetizados a partir de los atributos que aparecen en la pila, para los símbolos gramaticales del lado derecho de la producción por la que se reduce. V
+     8	En las definiciones con atributos por la izquierda, los atributos siempre se pueden evaluar con orden de profundidad. V
+     9	Un esquema de traducción es una gramática independiente de contexto en la que se asocian atributos con los símbolos gramaticales y se insertan acciones semánticas encerradas entre {} dentro de los lados derechos de las producciones. V
+    10	En las operaciones de derivación por la derecha, consideramos una producción como una regla de reescritura, donde el no terminal de más a la izquierda es sustituido por la cadena del lado derecho de la producción. F
+    11	Toda construcción que se pueda describir mediante una expresión regular también se puede describir mediante una gramática. V
+    12	Con la factorización por la izquierda realizamos una transformación gramatical útil para producir una gramática adecuada para el análisis sintáctico predictivo. V
+    13 	La función PRIMERO(A) calcula el conjunto de terminales que inician las cadenas terminales de A. V
+    14	La función SIGUIENTE(A) calcula el conjunto de terminales que pueden aparecer inmediatamente a la derecha de A en alguna forma de frase. V
+    15	Si existe A-->aBb, todo lo que esté en PRIMERO(b), excepto €, se pone en SIGUIENTE(B). V
+    16	En el análisis sintáctico ascendente, en cada paso de reducción, se sustituye una subcadena determinada que concuerde con el lado derecho de una producción por el símbolo del lado izquierdo de dicha producción, y si en cada paso se elige correctamente la subcadena, se traza una derivación por la derecha en sentido inverso. V
+    17	Con la técnica del análisis sintáctico por precedencia de operadores solo podemos analizar una pequeña clase de gramáticas. V
+    18	En el análisis sintáctico por precedencia de operadores, la tabla de relaciones de precedencia se puede codificar mediante las funciones de precedencia f y g que transforman símbolos terminales en producciones. F
+    19 	Los analizadores sintácticos LR pueden detectar un error sintáctico tan pronto como sea posible hacerlo en un examen de izquierda a derecha de la entrada. V
+    20	Las gramáticas LR(k) necesitan que el analizador sea capaz de reconocer la presencia del lado derecho de una producción, habiendo visto todo lo que deriva de dicho lado derecho con k símbolos de examen por anticipado. V
+    21	El diseño de un comprobador de tipos para un lenguaje se basa en información acerca de: las construcciones semánticas del lenguaje, la noción de tipos y las reglas para asignar tipos a las construcciones del lenguaje. F
+    22	Si T es una expresión de tipo, entonces array(I,T) es una expresión de tipo que indica el tipo de una matriz con elementos de tipo T y conjunto de índices I. V
+    23	En las expresiones de tipos se pueden considerar las funciones dentro de los lenguajes de programación como transformaciones de un rango a un dominio de tipo. F
+    24	Las variables de tipos no pueden contener variables cuyos valores son expresiones de tipos. F
+    25	Un sistema de tipos es una serie de reglas para asignar expresiones de tipos a las distintas partes de un programa. V
+    26	Diferentes compiladores o procesadores del mismo lenguaje deben utilizar el mismo sistema de tipos. F
+    27	La comprobación estática de tipos se realiza al ejecutar el programa objeto. F
+    28	Un sistema de tipos seguro elimina la necesidad de comprobar dinámicamente errores de tipos ya que se permite determiar estáticamente que dichos errores no pueden ocurrir cuando se está ejecutando el programa fuente. V
+    29	Dos expresiones de tipos son estructuralmente equivalentes si, y solo si, son idénticas. V
+    30	Se puede utilizar la comprobación de tipos en un compilador para insertar operaciones de conversión de tipos en la representación intermedia del programa fuente. V
+    31	La conversión de tipos implícita de constantes se puede realizar generalmente en el momento de la compilación . V
+    32	La sobrecarga se resuelve cuando se determina un significado único para un caso de símbolo sobrecargado. V
+    33 	No siempre es posible resolver la sobrecarga observando únicamente los argumentos de una función. V
+    34	Cada vez que se llama a un procedimiento polimórfico, las proposiciones de su cuerpo pueden ejecutarse con argumentos de tipos distintos. V
+    35	Una aplicación importante de las variables de tipo es la comprobación del uso consistente de identificadores en un lenguaje que no exija que los identificadores se declaren antes de ser utilizados. V
+    36	Durante la ejecución, el mismo nombre en el texto fuente puede denotar distintos objetos de datos en la máquina objeto. V
+    37	La duración de una activación  de un procedimiento p es la secuencia de pasos entre el primero y el último paso de la ejecución del cuerpo del procedimiento, sin incluir el tiempo que se tarda en ejecutar los procedimientos llamados internamente. F
+    38	El flujo de control de un programa corresponde a un recorrido en profundidad del árbol de activación que comienza en la raíz, visita un nodo antes que a sus hijos y visita los hijos en cada nodo recursivamente de izquierda a derecha. V
+    39	El término estado se refiera a una función que transforma una posición de memoria en el valor allí almacenado. V
+    40	La información necesaria para una sola ejecución de un procedimiento se consigue utilizando un bloque contiguo de memoria llamado registro de activación o macro. V  
